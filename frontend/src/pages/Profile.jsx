@@ -15,7 +15,7 @@ function Profile() {
 
   async function searchProfile() {
     try {
-      const response = await axios.get(`/api/profiles/${id}`);
+      const response = await axios.get(`https://node-js-technical-test-by-gurmeet-sir.onrender.com/api/profiles/${id}`);
 
       setProfile(response.data.data);
       setMessage("");
@@ -30,7 +30,7 @@ function Profile() {
     event.preventDefault();
 
     try {
-      const response = await axios.put(`/api/profiles/${profile.id}`, {
+      const response = await axios.put(`https://node-js-technical-test-by-gurmeet-sir.onrender.com/api/profiles/${profile.id}`, {
         name: profile.name,
         email: profile.email,
         phone: profile.phone,

@@ -23,7 +23,7 @@ function Home() {
     event.preventDefault();
 
     try {
-      const response = await axios.post("/api/profiles", {
+      const response = await axios.post("https://node-js-technical-test-by-gurmeet-sir.onrender.com/api/profiles", {
         ...form,
         age: Number(form.age)
       });
